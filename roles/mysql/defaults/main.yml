@@ -1,0 +1,8 @@
+---
+# defaults file for mysql
+# nome do banco de dados
+  wp_mysql_db: wordpress
+# login a ser criado
+  wp_mysql_user: wordpress
+# senha a ser atribuida para o login
+  wp_mysql_password: wp_db_password

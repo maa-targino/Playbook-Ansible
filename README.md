@@ -110,15 +110,15 @@ root  ALL=(ALL>ALL) ALL
 - **mysql**
 - **wordpress**
 
-#### 3.2.1 Create the roles with the Ansible Galaxy collection:
+#### 3.2.1 Create the roles in the folder with the Ansible Galaxy collection:
 
->user@ubuntu:~$ ansible-galaxy init server  
+>user@ubuntu:~/folder-name$ ansible-galaxy init server  
 >
->user@ubuntu:~$ ansible-galaxy init php  
+>user@ubuntu:~/folder-name$ ansible-galaxy init php  
 >
->user@ubuntu:~$ ansible-galaxy init mysql  
+>user@ubuntu:~/folder-name$ ansible-galaxy init mysql  
 >
->user@ubuntu:~$ ansible-galaxy init wordpress  
+>user@ubuntu:~/folder-name$$ ansible-galaxy init wordpress  
 
 ## 4. GitHub requirements:
 
@@ -155,14 +155,21 @@ root  ALL=(ALL>ALL) ALL
 >
 >user@ubuntu:~$ git remote add origin https://github.com/your-username/your-repo-name.git  
 >
->user@ubuntu:~$ git push -u origin master
->Username for 'https://github.com': your-username
->Password for 'your-username@github.com': Enter with your personal access token
+>user@ubuntu:~$ git push -u origin master  
+
+4.2.4 Enter with your GitHub username:
+
+>Username for 'https://github.com': your-username  
+
+4.2.5 Enter with your GitHub personal access token:
+
+>Password for 'your-username@github.com': your-token  
 
 ## Research sources:
 
 - [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 - [Git - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [Editing files -GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository)
 
 
 

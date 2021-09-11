@@ -1,7 +1,7 @@
-![Ansible-logo](https://github.com/maa-targino/Playbook-Ansible/blob/master/ansible-logo.png)
-
 Ansible playbook deployment
 ==========================
+
+![Ansible-logo](https://github.com/maa-targino/Playbook-Ansible/blob/master/ansible-logo.png)
 
 ## 1. Introduction:
 

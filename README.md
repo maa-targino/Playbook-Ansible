@@ -31,7 +31,7 @@ root  ALL=(ALL:ALL) ALL
 
 >user@ubuntu:~$ sudo apt-get install openssh-server
 
-#### 2.1.2 Edit root user permitions to access the SSH server:
+#### 2.1.2 Edit root user permissions to access the SSH server:
 
 >user@ubuntu:~$ sudo gedit etc/ssh/sshd_config
 

@@ -124,7 +124,10 @@ Ansible playbook deployment
 
 >user@ubuntu:~$ sudo apt install git-all
 
+## Research source:
 
+- [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
+- [Git - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 
 

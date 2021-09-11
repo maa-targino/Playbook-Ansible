@@ -4,7 +4,7 @@ Ansible playbook deployment
 ## 1. Introduction:
 
 This is an Ansible playbook that is used to automate the installation of a Wordpress application in a localhost server.  
-For this procedure we will use the local user to require the installation.
+For this procedure we will use an Ubuntu client, with the local user, to require the installation.
 
 ### 1.1 Add root permissions to a local user:
 #### 1.1.1 Access the sudoers folder with this command line:
@@ -91,7 +91,7 @@ root  ALL=(ALL>ALL) ALL
 
 #### 3.1.4 Click on the following link and copy the content to your hosts file:
 
-**[Click here](https://github.com/maa-targino/Playbook-Ansible/blob/master/hosts)**
+**[Hosts file](https://github.com/maa-targino/Playbook-Ansible/blob/master/hosts)**
 
 #### 3.1.5 Create playbook.yml file in the same folder:
 
@@ -101,7 +101,7 @@ root  ALL=(ALL>ALL) ALL
 
 #### 3.1.6 Click on the following link and copy the content to your playbook.yml file:
 
-**[Click here](https://github.com/maa-targino/Playbook-Ansible/blob/master/playbook.yml)**
+**[Playbook file](https://github.com/maa-targino/Playbook-Ansible/blob/master/playbook.yml)**
 
 ### 3.2 Playbook roles:
 

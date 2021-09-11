@@ -81,15 +81,15 @@ root  ALL=(ALL>ALL) ALL
 
 #### 3.1.2 Create the hosts file in the folder:
 
->user@ubuntu:~$ cd folder-name
-
+>user@ubuntu:~$ cd folder-name 
+> 
 >user@ubuntu:~/folder-name$ touch hosts
 
 #### 3.1.3 Open the hosts file:
 
 >user@ubuntu:~/folder-name$ sudo gedit hosts
 
-#### 3.1.4 Click the following link and copy the content to your hosts file:
+#### 3.1.4 Click on the following link and copy the content to your hosts file:
 
 **[Click here](https://github.com/maa-targino/Playbook-Ansible/blob/master/hosts)**
 
@@ -99,7 +99,7 @@ root  ALL=(ALL>ALL) ALL
 
 >user@ubuntu:~/folder-name$ touch playbook.yml
 
-#### 3.1.6 Click the following link and copy the content to your playbook.yml file:
+#### 3.1.6 Click on the following link and copy the content to your playbook.yml file:
 
 **[Click here](https://github.com/maa-targino/Playbook-Ansible/blob/master/playbook.yml)**
 
@@ -110,7 +110,15 @@ root  ALL=(ALL>ALL) ALL
 - **mysql**
 - **wordpress**
 
-### 3.3
+### 3.3 Create the roles with the Ansible Galaxy collection:
+
+>user@ubuntu:~$ ansible-galaxy init server  
+>
+>user@ubuntu:~$ ansible-galaxy init php  
+>
+>user@ubuntu:~$ ansible-galaxy init mysql  
+>
+>user@ubuntu:~$ ansible-galaxy init wordpress  
 
 ## 4. GitHub requirements:
 
@@ -127,7 +135,13 @@ root  ALL=(ALL>ALL) ALL
 
 >user@ubuntu:~$ sudo apt install git-all
 
-## Research source:
+### 4.2 GitHub repository:
+
+#### 4.2.1 Click on the link to create a new repository on GitHub:
+
+**[Create a new repository](https://github.com/new)**
+
+## Research sources:
 
 - [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 - [Git - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)

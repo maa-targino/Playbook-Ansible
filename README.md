@@ -91,7 +91,7 @@ root  ALL=(ALL>ALL) ALL
 
 #### 3.1.4 Click on the following link and copy the content to your hosts file:
 
-**[Hosts file](https://github.com/maa-targino/Playbook-Ansible/blob/master/hosts)**
+**[Hosts](https://github.com/maa-targino/Playbook-Ansible/blob/master/hosts)**
 
 #### 3.1.5 Create playbook.yml file in the same folder:
 
@@ -101,9 +101,9 @@ root  ALL=(ALL>ALL) ALL
 
 #### 3.1.6 Click on the following link and copy the content to your playbook.yml file:
 
-**[Playbook file](https://github.com/maa-targino/Playbook-Ansible/blob/master/playbook.yml)**
+**[Playbook](https://github.com/maa-targino/Playbook-Ansible/blob/master/playbook.yml)**
 
-### 3.2 Playbook roles:
+### 3.2 Creating the playbook roles:
 
 - **server**
 - **php**
@@ -118,7 +118,49 @@ root  ALL=(ALL>ALL) ALL
 >
 >user@ubuntu:~/folder-name$ ansible-galaxy init mysql  
 >
->user@ubuntu:~/folder-name$$ ansible-galaxy init wordpress  
+>user@ubuntu:~/folder-name$ ansible-galaxy init wordpress  
+
+### 3.3 Edit the files in the roles folder:
+
+#### 3.3.1 Go to the roles folder:
+
+>user@ubuntu:~/folder-name$ cd roles
+
+#### 3.3.2 Click on the link and copy the content to the file in the following path: *server/tasks/main.yml*
+
+**[Server/Tasks](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/server/tasks/main.yml)**  
+
+>user@ubuntu:~/folder-name/roles$ gedit server/tasks/main.yml
+
+#### 3.3.3 Click on the link and copy the content to the file in the following path: *php/tasks/main.yml*
+
+**[PHP/Tasks](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/php/tasks/main.yml)**
+
+>user@ubuntu:~/folder-name/roles$ gedit php/tasks/main.yml
+
+#### 3.3.4 Click on the link and copy the content to the file in the following path: *mysql/tasks/main.yml*
+
+**[MySQL/Tasks](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/mysql/tasks/main.yml)**
+
+>user@ubuntu:~/folder-name/roles$ gedit mysql/tasks/main.yml
+
+#### 3.3.6 Click on the link and copy the content to the file int following path: *mysql/defaults/main.yml*
+
+**[MySQL/Defaults](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/mysql/defaults/main.yml)**
+
+>user@ubuntu:~/folder-name/roles$ gedit mysql/defaults/main.yml
+
+#### 3.3.5 Click on the link and copy the content to the file in the following path: *wordpress/tasks/main.yml*
+
+**[Wordpress/Tasks](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/wordpress/tasks/main.yml)**
+
+>user@ubuntu:~/folder-name/roles$ gedit wordpress/tasks/main.yml
+
+#### 3.3.6 Click on the link and copy the content to the file in the following path: *wordpress/handlers/main.yml*
+
+**[Wordpress/Handlers](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/wordpress/handlers/main.yml)**
+
+>user@ubuntu:~/folder-name/roles$ gedit wordpress/handlers/main.yml
 
 ## 4. GitHub requirements:
 

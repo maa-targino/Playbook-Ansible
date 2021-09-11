@@ -3,7 +3,7 @@ Ansible playbook deployment
 
 ## 1.0 Introduction:
 
-- This is an Ansible playbook that is used to automate the instalation of a Wordpress application in a localhost server. 
+- This is an Ansible playbook that is used to automate the installation of a Wordpress application in a localhost server. 
 - For this procedure we will use the local user to require the installation.
 
 ### 1.1 Add root permissions to a local user:

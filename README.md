@@ -110,7 +110,7 @@ root  ALL=(ALL>ALL) ALL
 - **mysql**
 - **wordpress**
 
-### 3.3 Create the roles with the Ansible Galaxy collection:
+#### 3.2.1 Create the roles with the Ansible Galaxy collection:
 
 >user@ubuntu:~$ ansible-galaxy init server  
 >
@@ -140,6 +140,24 @@ root  ALL=(ALL>ALL) ALL
 #### 4.2.1 Click on the link to create a new repository on GitHub:
 
 **[Create a new repository](https://github.com/new)**
+
+#### 4.2.2 Click on the following link to create a new personal access token:
+
+**[Generate new token](https://github.com/settings/tokens/new)**
+
+#### 4.2.3 Commit and push the files to GitHub repository:
+
+>user@ubuntu:~$ git init  
+>
+>user@ubuntu:~$ git add .  
+>
+>user@ubuntu:~$ git commit -m "first commit"  
+>
+>user@ubuntu:~$ git remote add origin https://github.com/maa-targino/my-repo-name.git  
+>
+>user@ubuntu:~$ git push -u origin master
+>Username for 'https://github.com': your-username
+>Password for 'your-username@github.com': Enter with your personal access token
 
 ## Research sources:
 

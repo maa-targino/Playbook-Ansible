@@ -13,7 +13,7 @@ For this procedure we will use an Ubuntu client, with the local user, to require
 
 #### 1.1.2 Go to *User privilege specification* file section;
 
->#User privilege specification yes  
+>#User privilege specification  
 root  ALL=(ALL:ALL) ALL
 
 #### 1.1.3 Add the following instructions just below the previous line:

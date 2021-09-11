@@ -3,10 +3,7 @@ Ansible playbook deployment
 
 ![Ansible-logo](https://github.com/maa-targino/Playbook-Ansible/blob/master/ansible-logo.png)
 
-## 1. Introduction:
-
-This is an Ansible playbook that is used to automate the installation of a Wordpress application in a localhost server.  
-For this procedure we will use an Ubuntu client, with the local user, to require the installation.
+ O Ansible usa o protocolo SSH para sua implantação de modulos nos servidores e hosts.
 
 ### 1.1 Add root permissions to a local user:
 #### 1.1.1 Access the sudoers folder with this command line:

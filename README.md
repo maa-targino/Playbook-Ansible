@@ -30,7 +30,6 @@ PermitRootLogin yes
 
 #### 2.1.4 Restart the SSH server:
 user@ubuntu:~$ service ssh restart
-user@ubuntu:~$ service ssh status
 
 #### 2.1.5 Generate new SSH keys:
 user@ubuntu:~$ ssh-keygen

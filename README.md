@@ -153,7 +153,7 @@ root  ALL=(ALL>ALL) ALL
 >
 >user@ubuntu:~$ git commit -m "first commit"  
 >
->user@ubuntu:~$ git remote add origin https://github.com/maa-targino/my-repo-name.git  
+>user@ubuntu:~$ git remote add origin https://github.com/your-username/your-repo-name.git  
 >
 >user@ubuntu:~$ git push -u origin master
 >Username for 'https://github.com': your-username

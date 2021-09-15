@@ -172,32 +172,32 @@ root  ALL=(ALL:ALL) ALL
 
 >user@ubuntu:~/folder-name/roles$ gedit wordpress/handlers/main.yml
 
-## 4. Requerimentos do GitHub:
+## 5. Requerimentos do GitHub:
 
 - **Git instalado**
 - **Um repositório**
 
-### 4.1 Instalação do Git:
+### 5.1 Instalação do Git:
 
-#### 4.1.1 Verifique a versão do Git e se ele já está instalado:
+#### 5.1.1 Verifique a versão do Git e se ele já está instalado:
 
 >user@ubuntu:~$ git --version
 
-#### 4.1.2 Comando para instalar o Git:
+#### 5.1.2 Comando para instalar o Git:
 
 >user@ubuntu:~$ sudo apt install git-all
 
-### 4.2 Repositório no GitHub:
+### 5.2 Repositório no GitHub:
 
-#### 4.2.1 Clique no link para criar um novo repositório no GitHub:
+#### 5.2.1 Clique no link para criar um novo repositório no GitHub:
 
 **[Create a new repository](https://github.com/new)**
 
-#### 4.2.2 Clique no link para criar um novo token de acesso pessoal do GitHub:
+#### 5.2.2 Clique no link para criar um novo token de acesso pessoal do GitHub:
 
 **[Generate new token](https://github.com/settings/tokens/new)**
 
-#### 4.2.3 Commit e dê push nos arquivos para o seu repositório no GitHub:
+#### 5.2.3 Commit e dê push nos arquivos para o seu repositório no GitHub:
 
 >user@ubuntu:~$ git init  
 >
@@ -209,21 +209,21 @@ root  ALL=(ALL:ALL) ALL
 >
 >user@ubuntu:~$ git push -u origin master  
 
-#### 4.2.4 Entre com o seu nome do usuário do GitHub:
+#### 5.2.4 Entre com o seu nome do usuário do GitHub:
 
 >Username for 'https://github.com': your-username  
 
-#### 4.2.5 Entre com o seu novo token de acesso pessoal do GitHub:
+#### 5.2.5 Entre com o seu novo token de acesso pessoal do GitHub:
 
 >Password for 'your-username@github.com': your-token  
 
-#### 4.2.6 Segue um exemplo a seguir para ilustrar:
+#### 5.2.6 Segue um exemplo a seguir para ilustrar:
 
 ![Screenshot-02](https://github.com/maa-targino/Playbook-Ansible/blob/master/git04.PNG)
 
 ## Fontes de consulta:
 
-- [Editing files -GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository)
+- [Editing files - GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository)
 - [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 - [Git - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 

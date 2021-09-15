@@ -22,6 +22,10 @@ root  ALL=(ALL:ALL) ALL
 
 >user  ALL=(ALL:ALL) NOPASSWD: ALL
 
+#### 1.1.4 Segue um exemplo a seguir para ilustrar:
+
+![Screenshot-01](https://github.com/maa-targino/Playbook-Ansible/blob/master/ansible04.PNG)
+
 ## 2. Requerimentos para a implantação:
 
 - **Servidor SSH instalado**

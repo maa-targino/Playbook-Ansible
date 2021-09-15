@@ -1,118 +1,122 @@
-Ansible playbook deployment
-==========================
+Implementação de uma playbook Ansible
+=====================================
 
 ![Ansible-logo](https://github.com/maa-targino/Playbook-Ansible/blob/master/ansible-logo.png)
 
-## 1. Introduction:
+## 1. Introdução:
 
-This is an Ansible playbook that is used to automate the installation of a Wordpress application in a localhost server.  
-For this procedure we will use an Ubuntu client, with the local user, to require the installation.
+Esta é uma playbook Ansible utilizada para automatizar a instalação de uma aplicação Wordpress em um servidor localhost.  
+Foi utilizado neste procedimento um servidor de SSH e um cliente Ubuntu para as requisições. Foi utiizado um usuário local. 
 
-### 1.1 Add root permissions to a local user:
-#### 1.1.1 Access the sudoers folder with this command line:
+### 1.1 Adicionar permissões de root a um usuário local:
+#### 1.1.1 Acesse a pasta sudoers com o seguinte comando:
 
 >user@ubuntu:~$ sudo visudo
 
-#### 1.1.2 Go to *User privilege specification* file section;
+#### 1.1.2 Vá para a seção *User privilege specification*;
 
 >#User privilege specification  
 root  ALL=(ALL:ALL) ALL
 
-#### 1.1.3 Add the following instructions just below the previous line:
+#### 1.1.3 Adicione a seguinte instrução logo abaixo das linhas anteriores:
 
 >user  ALL=(ALL:ALL) NOPASSWD: ALL
 
-## 2. Deployment requirements:
+## 2. Requerimentos para a implantação:
 
-- **SSH Server**
-- **Ansible**
+- **Servidor SSH instalado**
+- **Ansible instalado**
 
-### 2.1 SSH server installation:
+### 2.1 Instalação do servidor de SSH:
 
-#### 2.1.1 SSH server installation command line:
+#### 2.1.1 Faça a instalação do servidor de SSH:
 
 >user@ubuntu:~$ sudo apt-get install openssh-server
 
-#### 2.1.2 Edit root user permissions to access the SSH server:
+#### 2.1.2 Altere as permissões de root para o acesso do servidor de SSH:
 
 >user@ubuntu:~$ sudo gedit etc/ssh/sshd_config
 
-#### 2.1.3 Uncomment the *#PermitRootLogin yes* this way:
+#### 2.1.3 Descomente a linha *#PermitRootLogin yes* deste modo:
 
 >PermitRootLogin yes
 
-#### 2.1.4 Restart the SSH server:
+#### 2.1.4 Reinicie o servidor de SSH:
 
 >user@ubuntu:~$ service ssh restart
 
-#### 2.1.5 Generate new SSH keys:
+#### 2.1.5 Gere uma nova chave SSH:
 
 >user@ubuntu:~$ ssh-keygen
 
-#### 2.1.6 Copy the new SSH key to the authorized keys path with the following command line:
+#### 2.1.6 Copie a nova chave SSH com o seguinte comando:
 
 >user@ubuntu:~$ cp -p ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
 
-### 2.2 Ansible installation:
+### 2.2 Instalação do Ansible:
 
-#### 2.2.1 Add a new repository for Ansible:
+#### 2.2.1 Crie um novo repositório Ansible:
 
 >user@ubuntu:~$ sudo apt-add-repository ppa:ansible/ansible
 
-#### 2.2.2 After that all you need is accept the keys and to press < ENTER > when the system requires.
+#### 2.2.2 Depois disso, pressione < ENTER > sempre que o sistema solicitar.
 
-#### 2.2.3 Update the apt-get with the following command line:
+#### 2.2.3 Atualize o apt-get com o seguinte comando:
 
 >user@ubuntu:~$ sudo apt-get update
 
-#### 2.2.4 Ansible installation command line:
+#### 2.2.4 Faça a instalação do Ansible:
 
 >user@ubuntu:~$ sudo apt-get install ansible
 
-#### 2.2.5 Check Ansible version:
+#### 2.2.5 Verifique a versão e confirme se o Ansible foi instalado corretamente:
 
 >user@ubuntu:~$ ansible --version
 
-## 3. Playbook deployment:
+## 3. Implementação da playbook:
 
-### 3.1 Creating the hosts and plyabook.yml files:
+### 3.1 Criando os arquivos da playbook:
 
-#### 3.1.1 Create a folder to store the playbook files:
+#### 3.1.1 Crie uma pasta para armazenar os arquivos:
 
 >user@ubuntu:~$ mkdir folder-name
 
-#### 3.1.2 Create the hosts file in the folder:
+#### 3.1.2 Crie o arquivo 'hosts' dentro da pasta:
 
 >user@ubuntu:~$ cd folder-name 
 > 
 >user@ubuntu:~/folder-name$ touch hosts
 
-#### 3.1.3 Open the hosts file:
+#### 3.1.3 Abra o arquivo 'hosts' com o editor de textos:
 
 >user@ubuntu:~/folder-name$ sudo gedit hosts
 
-#### 3.1.4 Click on the following link and copy the content to your hosts file:
+#### 3.1.4 Clique no link a seguir e copie seu conteúdo para dentro do seu arquivo 'hosts':
 
 **[Hosts](https://github.com/maa-targino/Playbook-Ansible/blob/master/hosts)**
 
-#### 3.1.5 Create playbook.yml file in the same folder:
+#### 3.1.5 Crie o arquivo 'playbook.yml' dentro da mesma pasta:
 
 >user@ubuntu:~$ cd folder-name
 
 >user@ubuntu:~/folder-name$ touch playbook.yml
 
-#### 3.1.6 Click on the following link and copy the content to your playbook.yml file:
+#### 3.1.6 Abra o arquivo 'playbook.yml' com o editor de textos:
+
+>user@ubuntu:~/folder-name$ sudo gedit playbook.yml
+
+#### 3.1.7 Clique no link a seguir e copie seu conteúdo para dentro do seu arquivo 'playbook.yml':
 
 **[Playbook](https://github.com/maa-targino/Playbook-Ansible/blob/master/playbook.yml)**
 
-### 3.2 Creating the playbook roles:
+### 3.2 Criação das roles:
 
 - **server**
 - **php**
 - **mysql**
 - **wordpress**
 
-#### 3.2.1 Create the roles in the folder with the Ansible Galaxy collection:
+#### 3.2.1 Crieas roles dentro da pasta utilizando a coleção Ansible Galaxy:
 
 >user@ubuntu:~/folder-name$ ansible-galaxy init server  
 >
@@ -122,74 +126,74 @@ root  ALL=(ALL:ALL) ALL
 >
 >user@ubuntu:~/folder-name$ ansible-galaxy init wordpress  
 
-### 3.3 Edit the files in the roles folder:
+### 3.3 Altere os arquivos dentro da pasta 'roles':
 
-#### 3.3.1 Go to the roles folder:
+#### 3.3.1 Vá para o caminho da pasta 'roles':
 
 >user@ubuntu:~/folder-name$ cd roles
 
-#### 3.3.2 Click on the link and copy the content to the file in the following path: *server/tasks/main.yml*
+#### 3.3.2 Clique no link a seguir e copie seu conteúdo para o seguinte caminho: *server/tasks/main.yml*
 
 **[Server/Tasks](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/server/tasks/main.yml)**  
 
 >user@ubuntu:~/folder-name/roles$ gedit server/tasks/main.yml
 
-#### 3.3.3 Click on the link and copy the content to the file in the following path: *php/tasks/main.yml*
+#### 3.3.3 Clique no link a seguir e copie seu conteúdo para o seguinte caminho: *php/tasks/main.yml*
 
 **[PHP/Tasks](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/php/tasks/main.yml)**
 
 >user@ubuntu:~/folder-name/roles$ gedit php/tasks/main.yml
 
-#### 3.3.4 Click on the link and copy the content to the file in the following path: *mysql/tasks/main.yml*
+#### 3.3.4 Clique no link a seguir e copie seu conteúdo para o seguinte caminho: *mysql/tasks/main.yml*
 
 **[MySQL/Tasks](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/mysql/tasks/main.yml)**
 
 >user@ubuntu:~/folder-name/roles$ gedit mysql/tasks/main.yml
 
-#### 3.3.6 Click on the link and copy the content to the file int following path: *mysql/defaults/main.yml*
+#### 3.3.6 Clique no link a seguir e copie seu conteúdo para o seguinte caminho: *mysql/defaults/main.yml*
 
 **[MySQL/Defaults](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/mysql/defaults/main.yml)**
 
 >user@ubuntu:~/folder-name/roles$ gedit mysql/defaults/main.yml
 
-#### 3.3.5 Click on the link and copy the content to the file in the following path: *wordpress/tasks/main.yml*
+#### 3.3.5 Clique no link a seguir e copie seu conteúdo para o seguinte caminho: *wordpress/tasks/main.yml*
 
 **[Wordpress/Tasks](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/wordpress/tasks/main.yml)**
 
 >user@ubuntu:~/folder-name/roles$ gedit wordpress/tasks/main.yml
 
-#### 3.3.6 Click on the link and copy the content to the file in the following path: *wordpress/handlers/main.yml*
+#### 3.3.6 Clique no link a seguir e copie seu conteúdo para o seguinte caminho: *wordpress/handlers/main.yml*
 
 **[Wordpress/Handlers](https://github.com/maa-targino/Playbook-Ansible/blob/master/roles/wordpress/handlers/main.yml)**
 
 >user@ubuntu:~/folder-name/roles$ gedit wordpress/handlers/main.yml
 
-## 4. GitHub requirements:
+## 4. Requerimentos do GitHub:
 
-- **Git**
-- **Repository**
+- **Git instalado**
+- **Um repositório**
 
-### 4.1 Git installation:
+### 4.1 Instalação do Git:
 
-#### 4.1.1 Check Git version:
+#### 4.1.1 Verifique a versão do Git e se ele já está instalado:
 
 >user@ubuntu:~$ git --version
 
-#### 4.1.2 Installation command line:
+#### 4.1.2 Comando para instalar o Git:
 
 >user@ubuntu:~$ sudo apt install git-all
 
-### 4.2 GitHub repository:
+### 4.2 Repositório no GitHub:
 
-#### 4.2.1 Click on the link to create a new repository on GitHub:
+#### 4.2.1 Clique no link para criar um novo repositório no GitHub:
 
 **[Create a new repository](https://github.com/new)**
 
-#### 4.2.2 Click on the following link to create a new personal access token:
+#### 4.2.2 Clique no link para criar um novo token de acesso pessoal do GitHub:
 
 **[Generate new token](https://github.com/settings/tokens/new)**
 
-#### 4.2.3 Commit and push the files to GitHub repository:
+#### 4.2.3 Commit e dê push nos arquivos para o seu repositório no GitHub:
 
 >user@ubuntu:~$ git init  
 >
@@ -201,15 +205,15 @@ root  ALL=(ALL:ALL) ALL
 >
 >user@ubuntu:~$ git push -u origin master  
 
-4.2.4 Enter with your GitHub username:
+#### 4.2.4 Entre com o seu nome do usuário do GitHub:
 
 >Username for 'https://github.com': your-username  
 
-4.2.5 Enter with your GitHub personal access token:
+#### 4.2.5 Entre com o seu novo token de acesso pessoal do GitHub:
 
 >Password for 'your-username@github.com': your-token  
 
-## Research sources:
+## Fontes de consulta:
 
 - [Editing files -GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository)
 - [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)

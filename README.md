@@ -217,6 +217,10 @@ root  ALL=(ALL:ALL) ALL
 
 >Password for 'your-username@github.com': your-token  
 
+#### 4.2.6 Segue um exemplo a seguir para ilustrar:
+
+![Screenshot-02](https://github.com/maa-targino/Playbook-Ansible/blob/master/git04.PNG)
+
 ## Fontes de consulta:
 
 - [Editing files -GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository)

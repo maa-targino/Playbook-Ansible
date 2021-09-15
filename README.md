@@ -6,7 +6,7 @@ Implementação de uma playbook Ansible
 ## 1. Introdução:
 
 Esta é uma playbook Ansible utilizada para automatizar a instalação de uma aplicação Wordpress em um servidor localhost.  
-Foi utilizado neste procedimento um servidor de SSH e um cliente Ubuntu para as requisições. Foi utiizado um usuário local. 
+Foi utilizado neste procedimento um servidor de SSH e um cliente Ubuntu para as requisições. Foi utiizado também o usuário local do Ubuntu. 
 
 ### 1.1 Adicionar permissões de root a um usuário local:
 #### 1.1.1 Acesse a pasta sudoers com o seguinte comando:

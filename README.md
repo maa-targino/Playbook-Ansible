@@ -184,7 +184,7 @@ root  ALL=(ALL:ALL) ALL
 
 > user@ubuntu:~/folder-name$ sudo ansible-playbook -i hosts playbook.yml
 
-#### 4.1.3 Ao iniciar a execução da playbook você verá algo semelhante à isso:
+#### 4.1.3 Ao iniciar a execução da playbook você verá algo semelhante a isso:
 
 ![Screenshot-Ansible](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible05.PNG)
 
@@ -194,7 +194,7 @@ root  ALL=(ALL:ALL) ALL
 
 > 127.0.0.1/
 
-#### 4.2.2 Você verá uma tela semelhante à essa:
+#### 4.2.2 Você verá uma tela semelhante a essa:
 
 ![Screenshot-Wordpress](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/wordpress02.PNG)
 

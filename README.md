@@ -120,7 +120,7 @@ root  ALL=(ALL:ALL) ALL
 - **mysql**
 - **wordpress**
 
-#### 3.2.1 Crieas roles dentro da pasta utilizando a coleção Ansible Galaxy:
+#### 3.2.1 Crieas roles dentro da pasta, de acordo com as melhores práticas, utilizando a coleção Ansible Galaxy:
 
 >user@ubuntu:~/folder-name$ ansible-galaxy init server  
 >

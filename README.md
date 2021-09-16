@@ -24,7 +24,7 @@ root  ALL=(ALL:ALL) ALL
 
 #### 1.1.4 Segue um exemplo a seguir para ilustrar:
 
-![Screenshot-01](https://github.com/maa-targino/Playbook-Ansible/blob/master/ansible04.PNG)
+![Screenshot-01](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible04.PNG)
 
 ## 2. Requerimentos para a implantação:
 
@@ -186,7 +186,7 @@ root  ALL=(ALL:ALL) ALL
 
 #### 4.1.3 Segue um exemplo a seguir para ilustrar:
 
-![Screenshot-Ansible](https://github.com/maa-targino/Playbook-Ansible/blob/master/ansible05.PNG)
+![Screenshot-Ansible](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible05.PNG)
 
 ### 4.2 Acesse o Wordpress
 
@@ -196,7 +196,7 @@ root  ALL=(ALL:ALL) ALL
 
 #### 4.2.2 Você verá uma tela semelhante à essa:
 
-![Screenshot-Wordpress](https://github.com/maa-targino/Playbook-Ansible/blob/master/wordpress02.PNG)
+![Screenshot-Wordpress](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/wordpress02.PNG)
 
 ## 5. Requerimentos do GitHub:
 
@@ -245,7 +245,7 @@ root  ALL=(ALL:ALL) ALL
 
 #### 5.2.6 Segue um exemplo a seguir para ilustrar:
 
-![Screenshot-02](https://github.com/maa-targino/Playbook-Ansible/blob/master/git04.PNG)
+![Screenshot-02](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/git04.PNG)
 
 ## Fontes de consulta:
 

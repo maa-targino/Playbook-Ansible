@@ -186,7 +186,11 @@ root  ALL=(ALL:ALL) ALL
 
 #### 4.1.3 Ao iniciar a execução da playbook você verá algo semelhante a isso:
 
-![Screenshot-Ansible](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible05.PNG)
+![Screenshot-Ansible1](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible05.PNG)
+
+#### 4.1.4 Ao término da execução da playbook, caso tenha sido bem sucedida você verá o seguinte:
+
+![Screenshot-Ansible2](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible06.PNG)
 
 ### 4.2 Acesse o Wordpress
 

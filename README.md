@@ -184,6 +184,10 @@ root  ALL=(ALL:ALL) ALL
 
 > user@ubuntu:~/folder-name$ sudo ansible-playbook -i hosts playbook.yml
 
+#### 4.1.3 Segue um exemplo a seguir para ilustrar:
+
+![Screenshot-Ansible](https://github.com/maa-targino/Playbook-Ansible/blob/master/ansible05.PNG)
+
 ### 4.2 Acesse o Wordpress
 
 #### 4.2.1 Abra o seu browser e acesse o IP do localhost:

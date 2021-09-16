@@ -172,6 +172,28 @@ root  ALL=(ALL:ALL) ALL
 
 >user@ubuntu:~/folder-name/roles$ gedit wordpress/handlers/main.yml
 
+## 4. Execução da playbook:
+
+### 4.1 Execute a playbook Ansible dentro da pasta:
+
+#### 4.1.1 Vá para o caminho da pasta:
+
+> user@ubuntu:~/folder-name/roles$ cd ..
+
+#### 4.1.2 Execute a playbook com o seguinte comando:
+
+> user@ubuntu:~/folder-name$ sudo ansible-playbook -i hosts playbook.yml
+
+### 4.2 Acesse o Wordpress
+
+#### 4.2.1 Abra o seu browser e acesse o IP do localhost:
+
+> 127.0.0.1/
+
+#### 4.2.2 Você verá uma tela semelhante à essa:
+
+![Screenshot-Wordpress](https://github.com/maa-targino/Playbook-Ansible/blob/master/wordpress02.PNG)
+
 ## 5. Requerimentos do GitHub:
 
 - **Git instalado**

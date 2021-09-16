@@ -1,7 +1,7 @@
 Implementação de uma playbook Ansible
 =====================================
 
-![Ansible-logo](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible-logo.png)
+![Ansible-logo](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible-logo.PNG)
 
 ## 1. Introdução:
 

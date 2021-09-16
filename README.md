@@ -22,7 +22,7 @@ root  ALL=(ALL:ALL) ALL
 
 >user  ALL=(ALL:ALL) NOPASSWD: ALL
 
-#### 1.1.4 Segue um exemplo a seguir para ilustrar:
+#### 1.1.4 Segue uma captura de tela para ilustrar:
 
 ![Screenshot-01](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible04.PNG)
 
@@ -184,7 +184,7 @@ root  ALL=(ALL:ALL) ALL
 
 > user@ubuntu:~/folder-name$ sudo ansible-playbook -i hosts playbook.yml
 
-#### 4.1.3 Segue um exemplo a seguir para ilustrar:
+#### 4.1.3 Ao iniciar a execução da playbook você verá algo semelhante à isso:
 
 ![Screenshot-Ansible](https://github.com/maa-targino/Playbook-Ansible/blob/master/pictures/ansible05.PNG)
 

@@ -47,7 +47,9 @@ root  ALL=(ALL:ALL) ALL
 
 #### 2.1.4 Reinicie o servidor de SSH:
 
+> ```
 >user@ubuntu:~$ service ssh restart
+> ```
 
 #### 2.1.5 Gere uma nova chave SSH:
 

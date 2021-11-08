@@ -10,8 +10,9 @@ Foi utilizado neste procedimento um servidor de SSH e um cliente Ubuntu para as 
 
 ### 1.1 Adicionar permissões de root a um usuário local:
 #### 1.1.1 Acesse a pasta sudoers com o seguinte comando:
-
->user@ubuntu:~$ sudo visudo
+````
+sudo visudo
+````
 
 #### 1.1.2 Vá para a seção *User privilege specification*;
 
@@ -19,8 +20,9 @@ Foi utilizado neste procedimento um servidor de SSH e um cliente Ubuntu para as 
 root  ALL=(ALL:ALL) ALL
 
 #### 1.1.3 Adicione a seguinte instrução logo abaixo das linhas anteriores:
-
->user  ALL=(ALL:ALL) NOPASSWD: ALL
+````
+user  ALL=(ALL:ALL) NOPASSWD: ALL
+````
 
 #### 1.1.4 Segue uma captura de tela para ilustrar:
 
@@ -34,12 +36,14 @@ root  ALL=(ALL:ALL) ALL
 ### 2.1 Instalação do servidor de SSH:
 
 #### 2.1.1 Faça a instalação do servidor de SSH:
-
->user@ubuntu:~$ sudo apt-get install openssh-server
+````
+sudo apt-get install openssh-server
+````
 
 #### 2.1.2 Altere as permissões de root para o acesso do servidor de SSH:
-
->user@ubuntu:~$ sudo gedit etc/ssh/sshd_config
+````
+sudo gedit etc/ssh/sshd_config
+````
 
 #### 2.1.3 Descomente a linha *#PermitRootLogin yes* deste modo:
 
@@ -47,17 +51,19 @@ root  ALL=(ALL:ALL) ALL
 
 #### 2.1.4 Reinicie o servidor de SSH:
 
-> ```
->user@ubuntu:~$ service ssh restart
-> ```
+```
+service ssh restart
+```
 
 #### 2.1.5 Gere uma nova chave SSH:
-
->user@ubuntu:~$ ssh-keygen
+````
+ssh-keygen
+````
 
 #### 2.1.6 Copie a nova chave SSH com o seguinte comando:
-
->user@ubuntu:~$ cp -p ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+````
+cp -p ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+````
 
 ### 2.2 Instalação do Ansible:
 
